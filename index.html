@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Electro-App Store is an online retail store that offers a wide range of electronic products and home appliances. It is one of the prominent destinations for consumers looking for the latest technologies and high-quality electronic products.">
+    <meta name="keywords" content="Online retail store, Electronic products, Home appliances, Smartphones, Tablets, Laptops, Desktop computers, Smart TVs, Home automation devices, Cameras, Electronic accessories, High-quality products, Globally renowned brands, Fast delivery, Convenient shopping experience, User-friendly interface, Excellent customer service, Reliable support team, Innovative technology, Trusted online shopping">
+    <title>Electro-App</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.webp" alt="favicon" />
+    <!-- Font awesome File -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" >
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css" >
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Start Header -->
+    <header>
+
+      <!-- Start Info Electro -->
+      <div class="info-electro border-b-2 py-">
+        <div class="container text-sm font-semibold text-gray-600 flex flex-col lg:flex-row gap-5 justify-between items-center">
+          
+          <!-- Start Contact -->
+          <ul class="contact flex gap-5">
+            <li class="call">
+              <a href="tel:+060 (800) 801-858">
+                <i class="fas fa-phone text-primary text-base mr-1"></i>
+                <span>+060 (800) 801-858</span>
+              </a>
+            </li>
+            <li class="email">
+              <a href="mailto:info@electro.com">
+                <i class="fas fa-envelope text-primary text-base mr-1"></i>
+                <span>info@electro.com</span>
+              </a>
+            </li>
+          </ul>
+          <!-- End Contact -->
+          
+          <!-- Start Others info -->
+          <ul class="others-info flex gap-5 text-xs md:text-sm text-center">
+            <li class="loc pr-3 border-r-2">
+              <a href="#location">
+                <i class="fas fa-location-dot mr-1"></i>
+                <span class="block md:inline">Store Locator</span>
+              </a>
+            </li>
+            <li class="track pr-3 border-r-2">
+              <a href="#track-order">
+                <i class="fa-solid fa-truck-fast mr-1"></i>
+                <span class="block md:inline">Track Your Order</span>
+              </a>
+            </li>
+            <li class="select-currency pr-3 border-r-2 cursor-pointer">
+              <i class="fas fa-dollar-sign mr-1"></i>
+              <span class="block md:inline">Dollar (US)</span>
+              <i class="fas fa-angle-down text-xs text-gray-400"></i>
+            </li>
+            <li class="register-signin cursor-pointer">
+              <i class="fas fa-user mr-1"></i>
+              <span class="block md:inline">Register <span class="text-gray-500">or</span> Sign in</span>
+            </li>
+          </ul>
+          <!-- End Others info -->
+          
+        </div>
+      </div>
+      <!-- End Info Electro -->
+      
+      <!-- Start Navbar -->
+      <nav class="py-3">
+        <div class="container flex justify-between gap-7 flex-wrap">
+
+          <!-- LOGO -->
+          <div class="logo text-secondary text-3xl md:text-5xl font-bold relative">
+            <a href="#home">
+              electro
+              <span class="dot h-2 w-2 rounded-full bg-primary absolute bottom-2"></span>
+            </a>
+          </div>
+          
+          <!-- SEARCH INPUT -->
+          <div class="search w-full h-12 lg:w-auto border-2 border-primary rounded-full overflow-hidden flex items-center justify-between order-1 lg:order-none">
+            <input type="text" placeholder="Search for products" class="min-w-28 md:min-w-[400px] flex-1 h-full px-4 py-2 placeholder-gray-400 text-gray-600 bg-white border-none outline-none">
+            <div class="dropdown-for-search pr-3 text-gray-600 cursor-pointer">
+              All Categories 
+              <i class="fas fa-angle-down text-xs"></i>
+            </div>
+            <button class="btn-search h-full px-4 lg:px-6 bg-primary" id="submitSearch" aria-label="submitSearch" name="submitSearch" type="submit">
+              <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            </button>
+          </div>
+          
+          <!-- CART -->
+          <div class="cart flex items-center gap-5 md:gap-7 text-lg text-secondary">
+            <button class="recycle" name="recycle"  id="recycle" aria-label="recycle"><i class="fa-solid fa-recycle"></i></button>
+            <button class="fav" name="heart" id="heart" aria-label="heart"><i class="fa-regular fa-heart"></i></button>
+            <button class="bag-shopping relative" id="shopping" aria-label="shopping">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="h-[18px] w-[18px] rounded-full flex items-center justify-center text-xs font-semibold bg-primary text-gray-600 absolute top-3 -right-2">4</span>
+            </button>
+            <div class="price text-sm font-semibold"><sup class="text-xs">$</sup>3 215.99</div>
+          </div>
+
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main page -->
+    <main>
+
+      <!-- Start Banner -->
+      <section id="banner" class="py-3">
+
+        <!-- Banner Nav -->
+        <nav class="banner-nav lg:ml-80 mb-1">
+          <div class="container flex items-center justify-between text-sm">
+
+            <ul class="font-semibold hidden md:flex items-center gap-7">
+              <li class="text-red-600"><button name="SuperDeals">SuperDeals</button></li>
+              <li class="duration-300 hover:text-red-600"><button name="Brands">Featured Brands</button></li>
+              <li class="duration-300 hover:text-red-600"><button name="Styles">Trending Styles</button></li>
+              <li class="duration-300 hover:text-red-600"><button name="Cards">Gift Cards</button></li>
+              <li class="duration-300 hover:text-red-600"><button name="Blog">Blog</button></li>
+            </ul>
+
+            <span class="mx-auto">Free Shipping on Orders $50+</span>
+
+          </div>
+        </nav>
+
+        <!-- Slider -->
+        <div class="slider">
+          <div class="container relative flex gap-10 justify-between">
+
+            <!-- aside -->
+            <aside class="aside w-[265px] -translate-x-[100%] lg:translate-x-0 duration-500 rounded-xl text-sm overflow-visible lg:overflow-hidden lg:-translate-y-[52px] shadow-lg bg-white z-50 | fixed lg:static top-0 left-0 h-full">
+              <h3 class="p-3 font-semibold text-gray-600 bg-primary">
+                <i class="fas fa-list-ul mr-2"></i>
+                All Departments
+              </h3>
+              <ul class="p-2 text-gray-600 max-h-full overflow-x-hidden overflow-y-auto">
+                <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Value of the Day</li>
+                <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Top 100 Offers</li>
+                <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">New Arrivals</li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Laptops  & Computers
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Cameras & Photography
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Smart Phones & Tablets
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Video Games & Consoles
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    TV & Audio
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Gadgets
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] border-b-2 font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Car Electronic & GPS
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+                <li class="subMenu max-h-10 overflow-hidden py-[9px] font-semibold cursor-pointer duration-500 text-gray-500">
+                  <span class="flex items-center justify-between">
+                    Accessories
+                    <i class="fas fa-angle-right pr-1"></i>
+                  </span>
+                  <ul class="pt-2 pl-5">
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Apple</li>
+                    <li class="py-[9px] border-b-2 font-semibold cursor-pointer duration-300 hover:pl-1">Dell</li>
+                    <li class="py-[9px] font-semibold cursor-pointer duration-300 hover:pl-1">Lenovo</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button id="toggler_aside" name="toggler_aside" class="toggler-aside fas fa-list-ul cursor-pointer w-fit text-2xl p-2 text-gray-600 bg-primary rounded-r-md | absolute top-1/2 -translate-y-1/2 -right-10 z-50">
+              </button>
+            </aside>    
+            
+            <!-- Swiper -->
+            <div class="swiper min-h-[500px] flex-1">
+              <div class="mySwiper w-full h-full">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide mb-10">
+                    <div class="row flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
+                      <!-- Info -->
+                      <div class="info flex-1">
+                        <h2 class="text-3xl md:text-6xl font-light max-w-2xl mb-5 text-gray-900">
+                          THE NEW <br> STANDARD
+                        </h2>
+                        <p class="text-base md:text-lg font-semibold text-gray-800 max-w-2xl leading-[1.8]">
+                          UNDER FAVORABLE SMARTWATCHES
+                        </p>
+                        <div class="price py-5">
+                          FROM 
+                          <span class="block text-5xl font-semibold text-gray-800"><SUP class="text-3xl">$</SUP>749<SUP class="text-3xl">99</SUP></span>
+                        </div>
+                        <button class="btn-buy w-44 py-2 rounded-lg text-gray-600 bg-primary" name="Buying">Start Buying</button>
+                      </div>
+                      <!-- Image -->
+                      <figure class="img w-64 sm:w-96 md:w-[500px] 2xl:w-[550px] animate-top-bottom">
+                          <img loading="lazy" src="./assets/images/watch-1-removebg.webp" alt="pro" width="640" height="360" class="max-w-full h-auto ml-auto">
+                      </figure>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide mb-10">
+                    <div class="row flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
+                      <!-- Info -->
+                      <div class="info flex-1">
+                        <h2 class="text-3xl md:text-6xl font-light max-w-2xl mb-5 text-gray-900">
+                          THE NEW <br> STANDARD
+                        </h2>
+                        <p class="text-base md:text-lg font-semibold text-gray-800 max-w-2xl leading-[1.8]">
+                          UNDER FAVORABLE SMARTWATCHES
+                        </p>
+                        <div class="price py-5">
+                          FROM 
+                          <span class="block text-5xl font-semibold text-gray-800"><SUP class="text-3xl">$</SUP>749<SUP class="text-3xl">99</SUP></span>
+                        </div>
+                        <button class="btn-buy w-44 py-2 rounded-lg text-gray-600 bg-primary" name="Buying">Start Buying</button>
+                      </div>
+                      <!-- Image -->
+                      <figure class="img w-64 sm:w-96 md:w-[500px] 2xl:w-[550px] animate-top-bottom">
+                          <img loading="lazy" src="./assets/images/watch-1-removebg.webp" alt="pro" width="640" height="360" class="max-w-full h-auto ml-auto">
+                      </figure>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide mb-10">
+                    <div class="row flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
+                      <!-- Info -->
+                      <div class="info flex-1">
+                        <h2 class="text-3xl md:text-6xl font-light max-w-2xl mb-5 text-gray-900">
+                          THE NEW <br> STANDARD
+                        </h2>
+                        <p class="text-base md:text-lg font-semibold text-gray-800 max-w-2xl leading-[1.8]">
+                          UNDER FAVORABLE SMARTWATCHES
+                        </p>
+                        <div class="price py-5">
+                          FROM 
+                          <span class="block text-5xl font-semibold text-gray-800"><SUP class="text-3xl">$</SUP>749<SUP class="text-3xl">99</SUP></span>
+                        </div>
+                        <button class="btn-buy w-44 py-2 rounded-lg text-gray-600 bg-primary" name="Buying">Start Buying</button>
+                      </div>
+                      <!-- Image -->
+                      <figure class="img w-64 sm:w-96 md:w-[500px] 2xl:w-[550px] animate-top-bottom">
+                          <img loading="lazy" src="./assets/images/watch-1-removebg.webp" alt="pro" width="640" height="360" class="max-w-full h-auto ml-auto">
+                      </figure>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination lg:flex"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- End Banner -->
+
+      <!-- Start Offers -->
+      <section id="offers" class="py-10">
+        <div class="container">
+
+          <div class="top-offer grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+            <div class="group p-5 bg-main_bg flex items-center justify-between gap-5">
+              <figure class="h-40 w-52">
+                <img loading="lazy" src="./assets/images/watch-1-removebg.webp" alt="pro" width="450" height="360" class="w-full h-full object-contain group-hover:scale-150 group-hover:rotate-12 duration-500">
+              </figure>
+              <figcaption class="text-gray-600">
+                <h3>CATCH BIG <strong>DEALS</strong> ON THE CAMERAS</h3>
+                <a href="#" class="flex items-center gap-3 font-semibold mt-3 w-fit">
+                  Shop now
+                  <i class="fas fa-angle-right bg-primary text-white h-[18px] w-[18px] p-[1px] rounded-full"></i>
+                </a>
+              </figcaption>
+            </div>
+
+            <div class="group p-5 bg-main_bg flex items-center justify-between gap-5">
+              <figure class="h-40 w-52">
+                <img loading="lazy" src="./assets/images/watch-1-removebg.webp" alt="pro" width="450" height="360" class="w-full h-full object-contain group-hover:scale-150 group-hover:rotate-12 duration-500">
+              </figure>
+              <figcaption class="text-gray-600">
+                <h3>CATCH BIG <strong>DEALS</strong> ON THE CAMERAS</h3>
+                <a href="#" class="flex items-center gap-3 font-semibold mt-3 w-fit">
+                  Shop now
+                  <i class="fas fa-angle-right bg-primary text-white h-[18px] w-[18px] p-[1px] rounded-full"></i>
+                </a>
+              </figcaption>
+            </div>
+
+            <div class="group p-5 bg-main_bg flex items-center justify-between gap-5">
+              <figure class="h-40 w-52">
+                <img loading="lazy" src="./assets/images/watch-1-removebg.webp" alt="pro" width="450" height="360" class="w-full h-full object-contain group-hover:scale-150 group-hover:rotate-12 duration-500">
+              </figure>
+              <figcaption class="text-gray-600">
+                <h3>CATCH BIG <strong>DEALS</strong> ON THE CAMERAS</h3>
+                <a href="#" class="flex items-center gap-3 font-semibold mt-3 w-fit">
+                  Shop now
+                  <i class="fas fa-angle-right bg-primary text-white h-[18px] w-[18px] p-[1px] rounded-full"></i>
+                </a>
+              </figcaption>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End Offers -->
+
+    </main>
+    <!-- End Main page -->
+
+    <!-- Start Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+
+    <!-- Start JS files -->
+    <script src="./assets/js/all.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+    <!-- End JS files -->
+  </body>
+</html>

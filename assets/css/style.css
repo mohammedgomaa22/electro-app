@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --swiper-pagination-color: #fed700;
+}
+
+html {
+    scroll-behavior: smooth;
+}    
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}    
+::-webkit-scrollbar-track {
+    background-color: #353f49;
+}    
+::-webkit-scrollbar-thumb {
+    background-color: #fed700;
+}    
+* {
+    box-sizing: border-box;
+}
+.container {
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+}    
+@media(min-width: 1280px) {
+    .container {
+        padding: 0.5rem 10rem;
+    }    
+}    
+
+/* Start Main */
+.slider {
+    background: url(../images/background-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+aside.open-aside {
+    transform: translateX(0);
+}
+
+.subMenu.open-menu {
+    max-height: 300px;
+}
+/* End Main */
